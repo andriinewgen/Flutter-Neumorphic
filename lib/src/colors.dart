@@ -89,7 +89,7 @@ class NeumorphicColors {
     final maxIntensity = Neumorphic.MAX_INTENSITY;
     final newOpacity = percent * maxOpacity / maxIntensity;
     final newColor =
-        maxColor.withValues(alpha: newOpacity); //<-- intensity act on opacity;
+        maxColor.withOpacity(newOpacity); //<-- intensity act on opacity;
     return newColor;
   }
 }
